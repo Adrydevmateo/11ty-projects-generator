@@ -105,8 +105,8 @@ mkdir "public"
 mkdir "src"
 mkdir "src/pages"
 mkdir "src/assets"
-mkdir "src/assets/styles"
-mkdir "src/assets/scripts"
+mkdir "src/assets/css"
+mkdir "src/assets/js"
 mkdir "src/assets/images"
 mkdir "src/assets/icons"
 mkdir "src/assets/videos"
@@ -162,10 +162,15 @@ cat <<EOF > src/layouts/base.njk
 <html lang="en">
 <head>
 	<title>{{title}}</title>
+
+	<!-- Meta Tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="{{author}}">
 	<meta name="description" content="{{description}}">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
 	{{content | safe}}
@@ -188,8 +193,7 @@ description: Thanks for using my Eleventy project generator
 EOF
 fi
 
-cat <<EOF > src/assets/styles/index.css
-/ * General advice: Let the browser help you with CSS * /
+cat <<EOF > src/assets/css/index.css
 :root {
 	--font-size: 20px;
 }
@@ -204,8 +208,7 @@ html, button, a, input {
 		cursor: pointer;
 	}
 
-	button:hover,
-	a:hover {
+	button:hover, a:hover {
 		scale: 1.1;
 	}
 }
