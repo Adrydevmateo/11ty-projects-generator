@@ -262,7 +262,7 @@ cat <<EOF > src/pages/home/home.json
 		"description": "Please leave a ⭐ on the repo",
 		"button": {
 			"text": "Check the repository",
-			"url": "https://github.com/adrydev/11ty-projects-generator"
+			"url": "https://github.com/Adrydevmateo/11ty-projects-generator"
 		}
 	}
 }
