@@ -4,7 +4,7 @@ A simple CLI tool to generate a new Eleventy project.
 
 ## Author
 
-[AdryDev](https://adrydev-portoflio.netlify.app/)
+[AdryDev](https://adrydev-portfolio.netlify.app/)
 
 ## How to use
 
